@@ -8,10 +8,10 @@ import java.util.List;
 public class TransactionGate {
     private TransactionBundle transactionBundle = new TransactionBundle();
 
-    public void postEntries(List<Entry> entries) {
-        for (Entry entry : entries) {
-            entry.postDate();
+    public void post(List<Item> items) {
+        for (Item item : items) {
+            item.postDate();
         }
-        transactionBundle.getListManager().add(entries);
+        transactionBundle.getListManager().add(items);
     }
 }

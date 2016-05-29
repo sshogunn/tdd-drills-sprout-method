@@ -4,7 +4,9 @@ package com.epam.engx.tdd.drills.sproutmethod;
  * @author Nurmakanov
  */
 class TransactionBundle {
-    EntriesHolder getListManager() {
-        return null;
+    private ItemsHolder itemsHolder = new ItemsHolder();
+
+    ItemsHolder getListManager() {
+        return itemsHolder;
     }
 }
